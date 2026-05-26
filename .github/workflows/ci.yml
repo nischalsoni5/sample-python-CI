@@ -24,5 +24,8 @@ jobs:
       - name: Lint
         run: flake8 .
 
+      - name: Show files
+        run: ls -R
+
       - name: Test
-        run: pytest
+        run: python -m pytest -v
